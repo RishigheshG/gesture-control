@@ -21,6 +21,7 @@ This repo currently implements **Phase 1** of a 4-phase plan: proving the camera
 - Not yet packaged as a background menu-bar app (Phase 4)
 
 ## Project structure
+```
 gesture-control/
 ├── hand_tracking_test.py   # Standalone diagnostic script: camera + landmark overlay only.
 │                           # Kept intentionally to isolate the camera/MediaPipe pipeline
@@ -31,7 +32,7 @@ gesture-control/
 ├── main.py                 # The actual application: camera loop + detection + actions, wired together
 ├── .gitignore
 └── README.md
-
+```
 ## Setup
 
 Requires Python 3.9–3.12 (MediaPipe does not yet support 3.13+).
