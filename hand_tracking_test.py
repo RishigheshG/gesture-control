@@ -3,8 +3,8 @@ import math
 import mediapipe as mp
 from gesture_detector import get_drag_displacement_index, get_drag_displacement_middle, is_pinching, is_pinching_middle
 
-mp_hands = mp.solutions.hands
-mp_draw = mp.solutions.drawing_utils
+mp_hands = mp.solutions.hands # type: ignore
+mp_draw = mp.solutions.drawing_utils # type: ignore
 
 hands = mp_hands.Hands(
     static_image_mode=False,
