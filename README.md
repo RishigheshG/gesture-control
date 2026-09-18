@@ -22,13 +22,13 @@ This repo currently implements **Phase 1** of a 4-phase plan: proving the camera
 
 ## Project structure
 gesture-control/
-├── hand_tracking_test.py # Standalone diagnostic script: camera + landmark overlay only.
-│ # Kept intentionally to isolate the camera/MediaPipe pipeline
-│ # from gesture logic when debugging, not leftover clutter.
-├── gesture_detector.py # Pinch detection (is_pinching, is_pinching_middle) and
-│ # anchor-relative drag displacement (get_drag_displacement)
-├── actions.py # System-level volume/brightness read + write (osascript, brightness CLI)
-├── main.py # The actual application: camera loop + detection + actions, wired together
+├── hand_tracking_test.py   # Standalone diagnostic script: camera + landmark overlay only.
+│                           # Kept intentionally to isolate the camera/MediaPipe pipeline
+│                           # from gesture logic when debugging, not leftover clutter.
+├── gesture_detector.py     # Pinch detection (is_pinching, is_pinching_middle) and
+│                           # anchor-relative drag displacement (get_drag_displacement)
+├── actions.py              # System-level volume/brightness read + write (osascript, brightness CLI)
+├── main.py                 # The actual application: camera loop + detection + actions, wired together
 ├── .gitignore
 └── README.md
 
